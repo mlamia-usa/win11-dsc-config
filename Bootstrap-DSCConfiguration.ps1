@@ -18,11 +18,11 @@
     
 .EXAMPLE
     # Run from PowerShell command line
-    .\Bootstrap-DSCConfiguration.ps1 -GitHubUrl "https://raw.githubusercontent.com/yourusername/yourrepo/main/Set-TimeZoneDSC.ps1"
+    .\Bootstrap-DSCConfiguration.ps1 -GitHubUrl "https://raw.githubusercontent.com/mlamia-usa/win11-dsc-config/main/Set-TimeZoneDSC.ps1"
     
 .EXAMPLE
     # One-liner for command prompt or browser (Run dialog)
-    powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/yourusername/yourrepo/main/Bootstrap-DSCConfiguration.ps1' | iex"
+    powershell -ExecutionPolicy Bypass -Command "irm 'https://raw.githubusercontent.com/mlamia-usa/win11-dsc-config/main/Bootstrap-DSCConfiguration.ps1' | iex"
 #>
 
 #Requires -RunAsAdministrator
@@ -31,7 +31,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $false)]
-    [string]$GitHubUrl = "https://raw.githubusercontent.com/yourusername/yourrepo/main/Set-TimeZoneDSC.ps1"
+    [string]$GitHubUrl = "https://raw.githubusercontent.com/mlamia-usa/win11-dsc-config/main/Set-TimeZoneDSC.ps1"
 )
 
 Set-StrictMode -Version Latest
